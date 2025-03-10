@@ -5,7 +5,7 @@ const Home = () => {
    <>
    <HomeBanner/>
    <Populartraining/>
-   {/* <Trainingsolution/> */}
+   <Trainingsolution/>
    <Explore/>
    {/* <Trainingpartners/> */}
    <Info/>
