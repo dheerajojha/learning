@@ -3,7 +3,7 @@ import {HomeBanner, Explore, Industrytab, Info, Populartraining,Trainingsolution
 const Home = () => {
   return (
    <>
-   <HomeBanner/>
+   {/* <HomeBanner/> */}
    <Populartraining/>
    <Trainingsolution/>
    <Explore/>

@@ -6,7 +6,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Header />
-      {/* <MobileHeader /> */}
+      <MobileHeader />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/industry/:id' element={<Industry />} />
