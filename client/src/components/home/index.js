@@ -1,0 +1,10 @@
+import HomeBanner from './HomeBanner'
+import Populartraining from './Populartraining'
+import Explore from './Explore'
+import Info from './Info'
+import Testimonials from './Testimonials'
+import Trusted from './Trusted'
+import Industrytab from './Industrytab'
+import Trainingsolution from './Trainingsolution'
+import Trainingpartners from './Trainingpartners'
+export {HomeBanner,Populartraining,Explore,Info,Testimonials,Trusted,Industrytab,Trainingsolution,Trainingpartners}

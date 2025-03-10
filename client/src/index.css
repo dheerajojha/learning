@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid-2 {
+    @apply grid md:grid-cols-2 gap-4;
+}
+
+.grid-3 {
+    @apply grid md:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+
+.grid-4 {
+    @apply grid grid-cols-2 lg:grid-cols-4 gap-4;
+}
+
+.grid-5 {
+    @apply grid md:grid-cols-2 lg:grid-cols-5 gap-4;
+}
+
+.f-row {
+    @apply flex items-center gap-2;
+}
+
+.f-row-l {
+    @apply flex items-center gap-6;
+}
+
+.f-col {
+    @apply flex flex-col items-center gap-2;
+}
+
+.f-left {
+    @apply flex justify-start items-center;
+}
+
+.f-center {
+    @apply flex justify-center items-center;
+}
+
+.f-between {
+    @apply flex items-center justify-between;
+}
+
+
+:root {
+    --primary: #0d6efd;
+    --secondry: #F0F5FF;
+    --tertiary: #001845;
+    --white: #fff;
+    --black: #000;
+    --gray-light: #E2E2E2;
+    --gray-dark: #F5F5F5;
+    --bg: #F5F5F5;
+    --forty: 40px;
+    --thirty-two: 32px;
+    --twenty-four: 24px;
+    --twenty: 20px;
+    --eighteen: 18px;
+    --sixteen: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    outline: none;
+    /* border: 1px solid red; */
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: var(--forty);
+    font-weight: 600;
+}
+
+
+h2 {
+    font-size: var(--thirty-two);
+}
+
+
+h3 {
+    font-size: var(--twenty-four);
+}
+
+h4 {
+    font-size: var(--twenty);
+}
+
+h5 {
+    font-size: var(--eighteen);
+}
+
+h6 {
+    font-size: var(--sixteen);
+}
+
+/* buttons */
+.cta {
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: var(--eighteen);
+    padding: .4rem 1rem;
+    border-radius: 10px;
+    display: block;
+}
+
+.cta-white {
+    background-color: var(--white);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: .4rem 1rem;
+    border-radius: 10px;
+    font-size: var(--eighteen);
+    display: block;
+}
+
+.cta-outline {
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: .4rem 1rem;
+    border-radius: 10px;
+    font-size: var(--eighteen);
+    display: block;
+}
+
+.t-center {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+section {
+    padding: 2.5rem 5%;
+}
+
+footer {
+    padding: 2.5rem 5%;
+}
+
+.i-container {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary);
+    border-radius: 20px;
+}
+
+/* header banner start */
+header {
+    font-size: var(--eighteen);
+
+}
+
+header a {
+    color: var(--black)
+}
+
+
+.homebanner-wrapper .swiper-button-prev,
+.homebanner-wrapper .swiper-button-next {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: all .5s ease;
+}
+
+.homebanner-wrapper .swiper-button-prev:hover,
+.homebanner-wrapper .swiper-button-next:hover {
+    background-color: var(--primary);
+}
+
+
+.homebanner-wrapper .swiper-button-prev::after,
+.homebanner-wrapper .swiper-button-next::after {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+@media screen and (max-width:768px) {
+
+    .homebanner-wrapper .swiper-button-prev,
+    .homebanner-wrapper .swiper-button-next {
+        display: none;
+    }
+}
+
+.trainingsolution-wrapper .swiper-slide {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 10px;
+}
+/* case study start */
+
+@media screen and (min-width:640px) {
+    .spb .swiper-pagination-bullet {
+        display: none;
+    }
+}
