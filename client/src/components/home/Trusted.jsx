@@ -24,7 +24,7 @@ const Trusted = () => {
     {
         title: 1,
         description: 'Of Customers Recommended Us',
-        icon: 'Million+'
+        icon: 'M+'
     },
     {
         title: 96,
