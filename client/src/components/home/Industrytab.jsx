@@ -43,29 +43,29 @@ const Industrytab = () => {
       {/* tab */}
       <div className="card-container grid-4">
         <div className={`card ${activetab == 1 ? 'bg-primary text-white border border-white':'bg-white'} p-8 cursor-pointer`} onClick={() => setActiveTab(1)}>
-          <div className="card-body">
+          <div className="card-body flex justify-center md:flex-col md:justify-normal">
             <span><FaHome size={30} /></span>
-            <h4>Government</h4>
+            <h4 className='hidden md:block'>Government</h4>
           </div>
         </div>
 
-        <div className={`card ${activetab == 2 ? 'bg-primary text-white border-white border':'bg-white'} p-8 cursor-pointer`} onClick={() => setActiveTab(2)}>
-          <div className="card-body">
+        <div className={`card  ${activetab == 2 ? 'bg-primary text-white border-white border':'bg-white'} p-8 cursor-pointer`} onClick={() => setActiveTab(2)}>
+          <div className="card-body flex justify-center md:flex-col md:justify-normal">
             <span><FaHeart size={30} /></span>
-            <h4>Health</h4>
+            <h4 className='hidden md:block'>Health</h4>
           </div>
         </div>
 
         <div className={`card ${activetab == 3 ? 'bg-primary text-white border-white border':'bg-white'} p-8 cursor-pointer`} onClick={() => setActiveTab(3)}>
-          <div className="card-body">
+          <div className="card-body flex justify-center md:flex-col md:justify-normal">
             <span><FaMonero size={30} /></span>
-            <h4>Financial Assiatance</h4>
+            <h4 className='hidden md:block'>Financial Assiatance</h4>
           </div>
         </div>
         <div className={`card ${activetab == 4 ? 'bg-primary text-white border-white border':'bg-white'} p-8 cursor-pointer`} onClick={() => setActiveTab(4)}>
-          <div className="card-body">
+          <div className="card-body flex justify-center md:flex-col md:justify-normal">
             <span><FaInfinity size={30} /></span>
-            <h4>Information Technology</h4>
+            <h4 className='hidden md:block'>Information Technology</h4>
           </div>
         </div>
       </div>
