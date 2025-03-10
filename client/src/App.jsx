@@ -14,7 +14,7 @@ const App = () => {
         <Route path='/course-catelog' element={<Coursecatelog />} />
         <Route path='/login' element={<Login />} />
       </Routes>
-      <Message />
+      {/* <Message /> */}
       <Footer />
     </BrowserRouter>
   )
