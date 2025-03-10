@@ -6,7 +6,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Header />
-      <MobileHeader />
+      {/* <MobileHeader /> */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/industry/:id' element={<Industry />} />
@@ -14,7 +14,7 @@ const App = () => {
         <Route path='/course-catelog' element={<Coursecatelog />} />
         <Route path='/login' element={<Login />} />
       </Routes>
-      {/* <Message /> */}
+      <Message />
       <Footer />
     </BrowserRouter>
   )
