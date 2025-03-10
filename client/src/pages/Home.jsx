@@ -3,9 +3,9 @@ import {HomeBanner, Explore, Industrytab, Info, Populartraining,Trainingsolution
 const Home = () => {
   return (
    <>
-   {/* <HomeBanner/> */}
+   <HomeBanner/>
    <Populartraining/>
-   <Trainingsolution/>
+   {/* <Trainingsolution/> */}
    <Explore/>
    {/* <Trainingpartners/> */}
    <Info/>
